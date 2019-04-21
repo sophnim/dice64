@@ -5,7 +5,7 @@
 int64_t dice64(int64_t begin, int64_t end)
 {
 	uint64_t range = end - begin;
-	if (!range) {
+	if (range == 0 || range < 0) {
 		return begin;
 	}
 
