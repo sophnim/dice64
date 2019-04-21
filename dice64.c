@@ -17,7 +17,7 @@ int64_t dice64(int64_t begin, int64_t end)
 	uint64_t divSize = 10000;
 	uint64_t sectionSize = 0;
 		
-	// select random number between 0 ~ totalSize - 1
+	// select random number between 0 ~ (1000000000000000000 - 1)
 	while (true) {
 		sectionSize = totalSize / divSize;
 		selected += ((uint64_t)(rand() % divSize)) * sectionSize;
