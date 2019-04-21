@@ -13,7 +13,7 @@ int64_t dice64(int64_t begin, int64_t end)
 	}
 
 	uint64_t selected = 0;
-	uint64_t totalSize = 1000000000000000000;
+	uint64_t totalSize = 1000000000000000000LL;
 	uint64_t divSize = 10000;
 	uint64_t sectionSize = 0;
 
