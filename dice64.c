@@ -2,10 +2,10 @@
 #include <stdlib.h>
 #include <time.h>
 
-// generates int64_t random : begin <= x <= end 
+// generates int64_t random : begin <= x <= end
+// call srand(time(NULL)) before call this function
 int64_t dice64(int64_t begin, int64_t end)
-{
-	srand(time(NULL));
+{	
 	uint64_t range = end - begin;
 	if (range == 0 || range < 0) { 
 		// if invalid range, return begin
